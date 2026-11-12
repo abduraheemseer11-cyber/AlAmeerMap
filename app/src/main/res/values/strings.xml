@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">خريطة الأمير</string>
+
+    <string name="nav_map">الخريطة</string>
+    <string name="nav_search">البحث</string>
+    <string name="nav_profile">الحساب</string>
+
+    <string name="config_missing_title">الإعدادات ناقصة</string>
+    <string name="config_missing_body">لم يتم ضبط SUPABASE_URL و SUPABASE_ANON_KEY عند بناء التطبيق. أضفهما في ملف local.properties أو في GitHub Secrets ثم أعد البناء.</string>
+
+    <string name="auth_login_title">تسجيل الدخول</string>
+    <string name="auth_register_title">إنشاء حساب جديد</string>
+    <string name="auth_email">البريد الإلكتروني</string>
+    <string name="auth_password">كلمة المرور</string>
+    <string name="auth_login">دخول</string>
+    <string name="auth_register">إنشاء الحساب</string>
+    <string name="auth_forgot">نسيت كلمة المرور؟</string>
+    <string name="auth_to_register">ليس لديك حساب؟ أنشئ حساباً</string>
+    <string name="auth_to_login">لديك حساب؟ سجّل الدخول</string>
+    <string name="auth_reset_sent">تم إرسال رابط استعادة كلمة المرور إلى بريدك الإلكتروني</string>
+    <string name="auth_check_email">تم إنشاء الحساب. افتح بريدك لتأكيد الحساب ثم سجّل الدخول</string>
+    <string name="auth_fill_fields">أدخل البريد الإلكتروني وكلمة المرور</string>
+    <string name="auth_enter_email">أدخل بريدك الإلكتروني أولاً</string>
+    <string name="auth_password_short">كلمة المرور يجب ألا تقل عن 6 أحرف</string>
+    <string name="auth_show">إظهار</string>
+    <string name="auth_hide">إخفاء</string>
+    <string name="err_invalid_credentials">البريد الإلكتروني أو كلمة المرور غير صحيحة</string>
+    <string name="err_email_not_confirmed">لم يتم تأكيد البريد الإلكتروني بعد</string>
+    <string name="err_already_registered">هذا البريد مسجّل مسبقاً</string>
+    <string name="err_network">تعذر الاتصال بالإنترنت</string>
+    <string name="err_link_expired">انتهت صلاحية الرابط أو أنه غير صالح</string>
+    <string name="err_generic">حدث خطأ: %1$s</string>
+    <string name="new_password_title">تعيين كلمة مرور جديدة</string>
+    <string name="new_password_label">كلمة المرور الجديدة</string>
+    <string name="new_password_save">حفظ كلمة المرور</string>
+
+    <string name="map_add_here">إضافة هنا</string>
+    <string name="map_satellite">قمر صناعي</string>
+    <string name="map_streets">خريطة الشوارع</string>
+    <string name="map_sync">مزامنة</string>
+    <string name="attribution_esri">الصور: Esri, Maxar, Earthstar Geographics</string>
+    <string name="attribution_osm">© مساهمو OpenStreetMap</string>
+
+    <string name="form_title_add">إضافة جهاز</string>
+    <string name="form_title_edit">تعديل الجهاز</string>
+    <string name="field_modem_number">رقم المودم</string>
+    <string name="field_network_number">رقم الشبكة</string>
+    <string name="field_modem_type">نوع المودم</string>
+    <string name="field_device_ip">آي بي الجهاز</string>
+    <string name="field_username">اسم المستخدم</string>
+    <string name="field_password">كلمة المرور</string>
+    <string name="field_client_name">اسم العميل</string>
+    <string name="field_client_phone">رقم العميل</string>
+    <string name="field_latitude">خط العرض</string>
+    <string name="field_longitude">خط الطول</string>
+    <string name="form_save">حفظ</string>
+    <string name="form_close">إغلاق</string>
+    <string name="form_need_name">أدخل رقم الشبكة أو اسم العميل على الأقل</string>
+    <string name="form_bad_coords">إحداثيات غير صالحة</string>
+
+    <string name="tap_to_copy">اضغط على أي حقل لنسخه</string>
+    <string name="copied">تم النسخ</string>
+    <string name="action_call">اتصال</string>
+    <string name="action_open_device">فتح الجهاز</string>
+    <string name="action_navigate">توجّه</string>
+    <string name="action_edit">تعديل</string>
+    <string name="action_delete">حذف</string>
+    <string name="action_cancel">إلغاء</string>
+    <string name="action_continue">متابعة</string>
+    <string name="delete_title">حذف الجهاز؟</string>
+    <string name="delete_body">سيتم حذف هذا الجهاز نهائياً من حسابك.</string>
+
+    <string name="search_hint">ابحث برقم الشبكة أو اسم العميل أو رقم الهاتف</string>
+    <string name="search_empty">لا توجد نتائج</string>
+    <string name="search_network_label">شبكة: %1$s</string>
+    <string name="search_phone_label">هاتف: %1$s</string>
+
+    <string name="profile_signed_in_as">مسجّل الدخول بحساب</string>
+    <string name="profile_devices_count">عدد الأجهزة: %1$d</string>
+    <string name="profile_sync">مزامنة الآن</string>
+    <string name="profile_export">تصدير البيانات</string>
+    <string name="profile_import">استيراد البيانات</string>
+    <string name="profile_logout">تسجيل الخروج</string>
+    <string name="export_warning_title">تصدير البيانات</string>
+    <string name="export_warning_body">سيحتوي الملف على كلمات مرور الأجهزة بشكل مقروء. شاركه فقط مع مهندسين تثق بهم.</string>
+    <string name="export_done">تم تصدير %1$d جهاز</string>
+    <string name="export_failed">فشل التصدير</string>
+    <string name="import_done">تم استيراد %1$d جهاز، وتخطي %2$d مكرر، و%3$d غير صالح</string>
+    <string name="import_failed">الملف غير صالح أو تعذرت قراءته</string>
+    <string name="sync_done">تمت المزامنة</string>
+    <string name="sync_failed">تعذرت المزامنة، بياناتك محفوظة محلياً وستُرسل لاحقاً</string>
+</resources>
