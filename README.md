@@ -1,26 +1,29 @@
-# خريطة الأمير (Al Ameer Map)
+# NetGuard Pro (com.network.scanner.pro)
 
-Native Android app (Kotlin, Jetpack Compose, OSMDroid satellite map, Supabase, Room) for mapping
-client network devices (MikroTik, NanoStation, PowerBeam, routers...).
+تطبيق أندرويد بوحدتين: **ماسح الشبكة والأمان** + **متتبّع التركيبات (خريطة الفنيين)**.
+Kotlin • Jetpack Compose • Hilt • Room + SQLCipher • Supabase • OSMDroid • WorkManager.
 
-## 1. Supabase
-1. Create a project at https://supabase.com
-2. SQL Editor -> paste and run `supabase/schema.sql`
-3. Authentication -> Providers -> Email: enabled
-   (Optional while testing: turn off "Confirm email")
-4. Authentication -> URL Configuration -> Redirect URLs: add `alameer://auth`
-5. Project Settings -> API: copy the Project URL and the `anon` public key
+## 1) إعداد Supabase (مرة واحدة)
+1. أنشئ مشروعاً على supabase.com.
+2. افتح **SQL Editor** والصق محتوى `supabase_schema.sql` ثم **Run**.
+3. من **Project Settings > API** انسخ `Project URL` و `anon public key` (لا تستخدم `service_role` أبداً).
 
-## 2. Secrets
-| Name | Value |
-|---|---|
-| `SUPABASE_URL` | https://xxxx.supabase.co |
-| `SUPABASE_ANON_KEY` | anon public key |
-| `ENCRYPTION_PEPPER` | any long random string (32+ chars). **Never change it later**, or stored device passwords can no longer be decrypted. |
+## 2) البناء على GitHub (بدون Android Studio)
+1. ارفع كل الملفات إلى مستودع جديد (مع المجلد المخفي `.github`).
+2. في المستودع: **Settings > Secrets and variables > Actions > New repository secret**
+   - `SUPABASE_URL` = رابط المشروع
+   - `SUPABASE_ANON_KEY` = مفتاح anon
+3. تبويب **Actions > Build Debug APK** (يعمل تلقائياً عند push أو يدوياً Run workflow).
+4. نزّل **NetGuardPro-debug-apk** من قسم Artifacts وثبّت `app-debug.apk`.
 
-* GitHub: repo -> Settings -> Secrets and variables -> Actions -> New repository secret
-* Local build: put the same three lines in `local.properties` (`NAME=value`)
+## 3) البناء محلياً
+ضع في `local.properties`: `SUPABASE_URL=...` و `SUPABASE_ANON_KEY=...` ثم:
+`gradle :app:assembleDebug` (Gradle 8.9 + JDK 17).
 
-## 3. Build
-Push to `main`; Actions -> "Build Android APK" -> download the `AlAmeerMap-debug-apk` artifact.
-Local: `gradle :app:assembleDebug` (or generate a wrapper once with `gradle wrapper`).
+## 4) تغيير الأيقونة
+استبدل `res/drawable/ic_launcher_foreground.xml` (أو استخدم Android Studio > New > Image Asset).
+
+## ملاحظات
+- العربية تعمل تلقائياً (RTL) عند لغة جهاز عربية؛ الإنجليزية افتراضية.
+- أندرويد 10+ يمنع قراءة جدول ARP، لذلك عناوين MAC للأجهزة الأخرى تظهر غالباً على أجهزة Root فقط.
+- الحظر/الإيقاف يعمل عبر VPN محلي على هذا الهاتف فقط ولا يفصل الجهاز عن الراوتر.

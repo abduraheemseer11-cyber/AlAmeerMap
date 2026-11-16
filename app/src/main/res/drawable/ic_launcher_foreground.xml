@@ -1,9 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Shield with Wi-Fi arcs. Drawn inside the adaptive-icon safe zone. -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="108dp" android:height="108dp"
-    android:viewportWidth="108" android:viewportHeight="108">
-    <path
-        android:fillColor="#FFFFFF"
-        android:fillType="evenOdd"
-        android:pathData="M54,28 C44.1,28 36,36.1 36,46 C36,59.5 54,80 54,80 C54,80 72,59.5 72,46 C72,36.1 63.9,28 54,28 Z M54,54 C49.6,54 46,50.4 46,46 C46,41.6 49.6,38 54,38 C58.4,38 62,41.6 62,46 C62,50.4 58.4,54 54,54 Z" />
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:scaleX="0.72"
+        android:scaleY="0.72">
+        <path
+            android:fillColor="#FF12284C"
+            android:pathData="M54,12 L90,25 L90,55 C90,76 74,90 54,98 C34,90 18,76 18,55 L18,25 Z"
+            android:strokeColor="#FF00E5FF"
+            android:strokeLineJoin="round"
+            android:strokeWidth="4" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M34.2,44.2 A28,28 0 0 1 73.8,44.2"
+            android:strokeColor="#FF00E5FF"
+            android:strokeLineCap="round"
+            android:strokeWidth="5" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M40.6,50.6 A19,19 0 0 1 67.4,50.6"
+            android:strokeColor="#FF1DE9B6"
+            android:strokeLineCap="round"
+            android:strokeWidth="5" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M46.9,56.9 A10,10 0 0 1 61.1,56.9"
+            android:strokeColor="#FF00E5FF"
+            android:strokeLineCap="round"
+            android:strokeWidth="5" />
+        <path
+            android:fillColor="#FF1DE9B6"
+            android:pathData="M54,62.5 A3.5,3.5 0 1 0 54.01,62.5 Z" />
+    </group>
 </vector>

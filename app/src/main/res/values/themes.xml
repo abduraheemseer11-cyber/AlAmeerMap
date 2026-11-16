@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.AlAmeerMap" parent="android:Theme.Material.Light.NoActionBar">
+    <!-- Light variant; the dark variant lives in values-night/themes.xml.
+         Compose draws all real UI, this only styles the window shell. -->
+    <style name="Theme.ScannerPro" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/window_light</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
     </style>
 </resources>

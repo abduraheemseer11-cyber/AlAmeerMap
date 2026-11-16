@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "AlAmeerMap"
+rootProject.name = "NetGuardPro"
 include(":app")
